@@ -1,32 +1,32 @@
 package br.dev.breno.tarefas;
 
 import java.io.BufferedReader;
+
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.UUID;
 
+import br.dev.breno.tarefas.dao.FuncionarioDAO;
 import br.dev.breno.tarefas.model.Funcionario;
 import br.dev.breno.tarefas.model.Status;
 import br.dev.breno.tarefas.model.Tarefa;
+import br.dev.breno.tarefas.utils.Utils;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// testarLeituraEscritaArquivo();
 		
-		Funcionario funcionario = new Funcionario("Breno","aluno");
+		Funcionario funcionario = new Funcionario("Paulo","Programação");
+		funcionario.setSetor("Tecnologia da Informação");
+		funcionario.setSalario(6987.98);
 		
-		Tarefa tarefa = new Tarefa(funcionario);
-		
-		tarefa.setNome("lavar a louça");
-		tarefa.setDescricao("lavar a louça antes de eu chegar");
-		tarefa.setDataInicio(LocalDate.of(2025, 5, 21));
-		tarefa.setPrazo(1);
-		tarefa.setStatus(Status.EM_ANDAMENTO);	
-
+		FuncionarioDAO dao = new FuncionarioDAO(funcionario);
+		dao.gravar();
 	}
 
 	private static void testarLeituraEscritaArquivo() {

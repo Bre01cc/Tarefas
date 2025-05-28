@@ -10,12 +10,14 @@ public class Tarefa {
 	private int prazo;
 	private LocalDate dataEntrega;
 	private Status status;
-	
-	
+
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
 	public Tarefa(Funcionario responsavel) {
 		this.responsavel = responsavel;
-	
-		
+
 	}
 
 	public String getNome() {
@@ -47,7 +49,7 @@ public class Tarefa {
 	}
 
 	public void setDataInicio(LocalDate dataInicio) {
-		this.dataInicio= dataInicio;
+		this.dataInicio = dataInicio;
 	}
 
 	public int getPrazo() {
@@ -59,10 +61,9 @@ public class Tarefa {
 	}
 
 	public LocalDate getDataPrevistaEntrega() {
-		return  dataInicio.plusDays(prazo);
-		
-	}
+		return dataInicio.plusDays(prazo);
 
+	}
 
 	public LocalDate getDataEntrega() {
 		return dataEntrega;
@@ -74,11 +75,6 @@ public class Tarefa {
 
 	public Status getStatus() {
 		LocalDate hoje = LocalDate.now();
-		
-		
-			
-		
-		
 		return status;
 	}
 
