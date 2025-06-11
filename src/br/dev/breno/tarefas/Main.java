@@ -16,17 +16,25 @@ import br.dev.breno.tarefas.model.Status;
 import br.dev.breno.tarefas.model.Tarefa;
 import br.dev.breno.tarefas.ui.FuncionarioFrame;
 import br.dev.breno.tarefas.ui.FuncionarioListaFrame;
+import br.dev.breno.tarefas.ui.GerenciadorDeTelas;
 import br.dev.breno.tarefas.utils.Utils;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// testarLeituraEscritaArquivo();
-//		
-		FuncionarioDAO dao = new FuncionarioDAO(null);
-		dao.getFuncionarios();
+	
+//	FuncionarioDAO dao = new FuncionarioDAO(null);
+//dao.getFuncionarios();
+//	new FuncionarioListaFrame();
 
-//		new FuncionarioFrame();
+		
+		new GerenciadorDeTelas();
+	
+
+
+	
+	
 //		Funcionario funcionario = new Funcionario("Paulo","Programação");
 //		funcionario.setSetor("Tecnologia da Informação");
 //		funcionario.setSalario(6987.98);

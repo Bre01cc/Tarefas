@@ -27,7 +27,7 @@ public class Funcionario {
 	}
 
 	public Funcionario(String nome){
-		System.out.println("Criando funcionário"+ nome);
+//		System.out.println("Criando funcionário"+ nome);
 
 		this.nome = nome;
 		setMatricula(Utils.gerarUUID8());
