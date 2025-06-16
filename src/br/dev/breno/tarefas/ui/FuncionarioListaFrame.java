@@ -53,7 +53,7 @@ public class FuncionarioListaFrame {
 		// se o vetor tiver 3 itens terá 3 colunas
 
 		// model passamos a coluna e quantidade de linhas
-		model = new DefaultTableModel(colunas, 100);
+		model = new DefaultTableModel(colunas,100);
 		tabelaFuncionarios = new JTable(model);
 		scrollFuncionarios = new JScrollPane(tabelaFuncionarios);
 		scrollFuncionarios.setBounds(10, 70, 680, 300);

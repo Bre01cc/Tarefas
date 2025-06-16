@@ -78,11 +78,11 @@ public class FuncionarioFrame {
 		txtSalario.setBounds(10, 310, 150, 30);
 
 		btnSalvar = new JButton("Salvar");
-		btnSalvar.setBounds(10, 380, 200, 40);
+		btnSalvar.setBounds(10, 380, 120, 40);
 //		btnSalvar.setBackground(Color.GREEN);
 
 		btnSair = new JButton("Sair");
-		btnSair.setBounds(220, 380, 120, 40);
+		btnSair.setBounds(140, 380, 120, 40);
 //		btnSair.setBackground(Color.RED);
 
 		painel.add(labelMatricula);

@@ -57,6 +57,7 @@ public class GerenciadorDeTelas {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				new TarefasListaFrame(telaGerenciador);
 
 			}
 		});

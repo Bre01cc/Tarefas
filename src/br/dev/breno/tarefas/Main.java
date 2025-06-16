@@ -11,12 +11,15 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 import br.dev.breno.tarefas.dao.FuncionarioDAO;
+import br.dev.breno.tarefas.factory.ArquivoTarefaFactory;
 import br.dev.breno.tarefas.model.Funcionario;
 import br.dev.breno.tarefas.model.Status;
 import br.dev.breno.tarefas.model.Tarefa;
 import br.dev.breno.tarefas.ui.FuncionarioFrame;
 import br.dev.breno.tarefas.ui.FuncionarioListaFrame;
 import br.dev.breno.tarefas.ui.GerenciadorDeTelas;
+import br.dev.breno.tarefas.ui.TarefaFrame;
+import br.dev.breno.tarefas.ui.TarefasListaFrame;
 import br.dev.breno.tarefas.utils.Utils;
 
 public class Main {
@@ -28,9 +31,19 @@ public class Main {
 //dao.getFuncionarios();
 //	new FuncionarioListaFrame();
 
+//	new TarefasListaFrame();	
+//		new GerenciadorDeTelas();
+//		new TarefaFrame();
 		
-		new GerenciadorDeTelas();
-	
+		ArquivoTarefaFactory arTaf = new ArquivoTarefaFactory();
+		String caminhoDoArquivo = "/Users/25133656/projetoTarefasDS1M/tarefas.csv";
+		public FileWriter fw;
+		private BufferedWriter bw;
+		private FileReader fr;
+		private BufferedReader br;
+
+		
+
 
 
 	
