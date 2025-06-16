@@ -3,10 +3,13 @@ package br.dev.breno.tarefas;
 import java.io.BufferedReader;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -25,6 +28,34 @@ import br.dev.breno.tarefas.utils.Utils;
 public class Main {
 
 	public static void main(String[] args) {
+		new GerenciadorDeTelas();
+		
+		//TESTE Para verificar se o Arquivo pode ser encontrado
+//		String caminho = "dadosAR/tarefa.txt"; // Caminho que você está usando
+//
+//        File arquivo = new File(caminho);
+//
+//        if (!arquivo.exists()) {
+//            System.out.println("❌ Arquivo NÃO encontrado.");
+//        } else {
+//            System.out.println("✅ Arquivo encontrado em: " + arquivo.getAbsolutePath());
+//
+//            if (arquivo.length() == 0) {
+//                System.out.println("⚠️ Arquivo está vazio.");
+//            } else {
+//                System.out.println("📄 Arquivo possui " + arquivo.length() + " bytes.");
+//
+//                // Mostra o conteúdo do arquivo
+//                try {
+//                    System.out.println("📃 Conteúdo:");
+//                    Files.lines(Paths.get(caminho)).forEach(System.out::println);
+//                } catch (IOException e) {
+//                    System.out.println("❌ Erro ao ler o arquivo: " + e.getMessage());
+//                }
+//            }}
+}
+		
+		
 		// testarLeituraEscritaArquivo();
 	
 //	FuncionarioDAO dao = new FuncionarioDAO(null);
@@ -32,15 +63,15 @@ public class Main {
 //	new FuncionarioListaFrame();
 
 //	new TarefasListaFrame();	
-//		new GerenciadorDeTelas();
+
 //		new TarefaFrame();
 		
-		ArquivoTarefaFactory arTaf = new ArquivoTarefaFactory();
-		String caminhoDoArquivo = "/Users/25133656/projetoTarefasDS1M/tarefas.csv";
-		public FileWriter fw;
-		private BufferedWriter bw;
-		private FileReader fr;
-		private BufferedReader br;
+//		ArquivoTarefaFactory arTaf = new ArquivoTarefaFactory();
+//		String caminhoDoArquivo = "/Users/25133656/projetoTarefasDS1M/tarefas.csv";
+//		public FileWriter fw;
+//		private BufferedWriter bw;
+//		private FileReader fr;
+//		private BufferedReader br;
 
 		
 
@@ -54,7 +85,7 @@ public class Main {
 //		
 //		FuncionarioDAO dao = new FuncionarioDAO(funcionario);
 //		dao.gravar();
-	}
+	
 
 	private static void testarLeituraEscritaArquivo() {
 		String so = System.getProperty("os.name");

@@ -7,7 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ArquivoFuncionarioFactory {
-	private String caminho = "/Users/25133656/projetoTarefasDS1M/funcionario.csv";
+	private String caminho = "dadosAR/funcionario.txt";
 	private FileWriter fw;
 	private BufferedWriter bw;
 	private FileReader fr;
