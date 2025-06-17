@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 import br.dev.breno.tarefas.dao.FuncionarioDAO;
@@ -28,7 +29,26 @@ import br.dev.breno.tarefas.utils.Utils;
 public class Main {
 
 	public static void main(String[] args) {
-		new GerenciadorDeTelas();
+//		new GerenciadorDeTelas();
+//		LocalDate data;
+//		
+//		
+//		LocalDate dataEntrega;
+//		int prazo = 5;
+//		String dia = "10/12/2008";
+//		
+//		data =LocalDate.parse(dia,DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+//		dia = data.toString();
+//		
+//		LocalDate dap = data.plusDays(prazo);
+//		dataEntrega = dap;
+//	
+//	System.out.println(dap);
+		
+			
+
+		
+		
 		
 		//TESTE Para verificar se o Arquivo pode ser encontrado
 //		String caminho = "dadosAR/tarefa.txt"; // Caminho que você está usando
