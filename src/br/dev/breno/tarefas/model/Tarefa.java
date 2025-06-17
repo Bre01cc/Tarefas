@@ -77,6 +77,7 @@ public class Tarefa {
 		LocalDate hoje = LocalDate.now();
 		return status;
 	}
+	
 
 //	public void setStatus(Status status) {
 //		this.status = status;
