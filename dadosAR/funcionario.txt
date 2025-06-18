@@ -1,2 +1,4 @@
 cfa36b47,Breno,Dentista,Clinica,2300.0
 68ef5a25,Breno Oliveira,Fodão,Chefe,1.0E38
+0cb6e245,Breno,segretario,RH,22222.0
+70ca14f9,Celso Furtado,Professor,TI,20000.0

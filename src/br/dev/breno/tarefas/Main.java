@@ -29,9 +29,17 @@ import br.dev.breno.tarefas.utils.Utils;
 public class Main {
 
 	public static void main(String[] args) {
-//		new GerenciadorDeTelas();
-//		LocalDate data;
+		new GerenciadorDeTelas();
 //		
+//		FuncionarioDAO dao = new FuncionarioDAO(null);
+// System.out.println(dao.getNomesFuncionarios()); 
+//	Funcionario f = new Funcionario(null);
+
+		
+//		LocalDate data;
+//LocalDate hoje = LocalDate.now();
+//System.out.println(hoje);
+
 //		
 //		LocalDate dataEntrega;
 //		int prazo = 5;

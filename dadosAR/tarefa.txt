@@ -1,0 +1,3 @@
+
+4ec340f5,Orientação objeto,Ensinar orientação objeto para os alunos da DS1M-A,Celso Furtado,2025-07-10,1 Dias,2025-07-11,NAO_INICIADO
+50ef1ea3,Ir para escola,Vá para escola realizar as tarefas educacionais,Breno,2025-06-17,2 Dias,2025-06-19,EM_ANDAMENTO

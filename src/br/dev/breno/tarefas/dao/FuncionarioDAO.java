@@ -35,6 +35,7 @@ public class FuncionarioDAO {
 		}
 
 	}
+	
 
 	public List<Funcionario> getFuncionarios() {
 		List<Funcionario> funcionarios = new ArrayList<Funcionario>();
@@ -64,7 +65,34 @@ public class FuncionarioDAO {
 		} catch (IOException e) {
 			return null;
 
-		}
+		}}
+		//Metodo para gerar a lista de nomes dos funcionarios 
+	public List<String> getNomesFuncionarios() {
+	    List<String> nomes = new ArrayList<>();
+
+	    try {
+	        BufferedReader br = aff.getBr();
+	        String linha = "";
+
+	        while (linha != null) {
+	            linha = br.readLine();
+	            if (linha != null) {
+	                String[] funcionarioVetor = linha.split(",");
+
+	                // Pega apenas o nome, que está no índice 1
+	                
+	               nomes.add(funcionarioVetor[1]);
+	               
+	            }
+	        }
+	      
+	        return nomes;
+
+	    } catch (IOException e) {
+	        return null;
+	    }
 	}
 
-}
+	}
+
+
