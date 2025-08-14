@@ -34,4 +34,3 @@ interface gráfica e manipulação de dados.
 
 ## Autor
 - [Breno Oliveira](https://www.linkedin.com/in/breno-oliveira-assis-reis-203010351/).
-- [Breno Oliveira](https://www.linkedin.com/in/breno-oliveira-assis-reis-203010351/).
